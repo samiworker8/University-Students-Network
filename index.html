@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Students Network (USN)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-graduation-cap logo-icon"></i>
+            <h2>USN <span>Ethiopia</span></h2>
+        </div>
+        <div class="user-profile">
+            <i class="fa-regular fa-bell icon-btn"></i>
+            <div class="avatar">ሳሚ</div>
+        </div>
+    </header>
+
+    <nav class="nav-scroll-container">
+        <div class="nav-wrapper">
+            <button class="nav-item active" onclick="switchTab('all-students')"><i class="fa-solid fa-users"></i> All Students</button>
+            <button class="nav-item" onclick="switchTab('universities')"><i class="fa-solid fa-building-columns"></i> University</button>
+            <button class="nav-item" onclick="switchTab('departments')"><i class="fa-solid fa-laptop-code"></i> Department</button>
+            <button class="nav-item" onclick="switchTab('all-exams')"><i class="fa-solid fa-file-pen"></i> All Exam</button>
+            <button class="nav-item" onclick="switchTab('student-news')"><i class="fa-solid fa-newspaper"></i> Student News</button>
+            <button class="nav-item" onclick="switchTab('job-opportunity')"><i class="fa-solid fa-briefcase"></i> Job Opportunity</button>
+            <button class="nav-item" onclick="switchTab('scholarships')"><i class="fa-solid fa-award"></i> Scholarship</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section id="all-students" class="page-section active">
+            <div class="section-header">
+                <h3>የሁሉም ተማሪዎች መወያያ መድረክ (National Student Forum)</h3>
+                <p>በመላው ኢትዮጵያ ከሚገኙ የዩኒቨርሲቲ ተማሪዎች ጋር ይወያዩ፣ ሀሳብ እና እውቀት ይለዋወጡ።</p>
+            </div>
+            <div class="forum-container">
+                <div class="post-box">
+                    <textarea placeholder="ምን አዲስ ነገር አለ? ለሁሉም ተማሪዎች ጥያቄ ወይም ሀሳብ ያካፍሉ..."></textarea>
+                    <button class="btn-primary"><i class="fa-solid fa-paper-plane"></i> ለጥፍ (Post)</button>
+                </div>
+                <div class="feed-list">
+                    <div class="feed-card">
+                        <div class="feed-user">
+                            <div class="avatar-sm">አበበ</div>
+                            <div>
+                                <h4>አበበ ከበደ</h4>
+                                <span>AAU • Software Engineering</span>
+                            </div>
+                        </div>
+                        <p class="feed-text">ለ1ኛ ዓመት ተማሪዎች የሚያግዝ የCalculus I ማብራሪያ ሰነድ የሚፈልግ ካለ በቻት አውሩኝ!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="universities" class="page-section">
+            <div class="section-header">
+                <h3>የኢትዮጵያ ዩኒቨርሲቲዎች</h3>
+                <p>የሚፈልጉትን ግቢ በመምረጥ ከግቢው ተማሪዎች እና ዲፓርትመንቶች ጋር ይገናኙ።</p>
+            </div>
+            <div class="grid-container">
+                <div class="card uni-card">
+                    <i class="fa-solid fa-university card-icon"></i>
+                    <h4>AAU</h4>
+                    <p>Addis Ababa University</p>
+                    <div class="card-actions">
+                        <button class="btn-secondary">All AAU Students</button>
+                        <button class="btn-outline">Departments</button>
+                    </div>
+                </div>
+                <div class="card uni-card">
+                    <i class="fa-solid fa-university card-icon"></i>
+                    <h4>MTU</h4>
+                    <p>Mizan-Tepi University</p>
+                    <div class="card-actions">
+                        <button class="btn-secondary">All MTU Students</button>
+                        <button class="btn-outline">Departments</button>
+                    </div>
+                </div>
+                <div class="card uni-card">
+                    <i class="fa-solid fa-university card-icon"></i>
+                    <h4>HU</h4>
+                    <p>Hawassa University</p>
+                    <div class="card-actions">
+                        <button class="btn-secondary">All HU Students</button>
+                        <button class="btn-outline">Departments</button>
+                    </div>
+                </div>
+                <div class="card uni-card">
+                    <i class="fa-solid fa-university card-icon"></i>
+                    <h4>WSU</h4>
+                    <p>Wolaita Sodo University</p>
+                    <div class="card-actions">
+                        <button class="btn-secondary">All WSU Students</button>
+                        <button class="btn-outline">Departments</button>
+                    </div>
+                </div>
+                <div class="card uni-card">
+                    <i class="fa-solid fa-university card-icon"></i>
+                    <h4>DDU</h4>
+                    <p>Dire Dawa University</p>
+                    <div class="card-actions">
+                        <button class="btn-secondary">All DDU Students</button>
+                        <button class="btn-outline">Departments</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="departments" class="page-section">
+            <div class="section-header">
+                <h3>የሀገር አቀፍ ዲፓርትመንት ማህበረሰቦች</h3>
+                <p>የራስዎን ዲፓርትመንት በመምረጥ በሁሉም ግቢዎች ከሚገኙ የሙያ አጋሮችዎ ጋር ይወያዩ።</p>
+            </div>
+            <div class="grid-container">
+                <div class="card dept-card">
+                    <i class="fa-solid fa-code card-icon"></i>
+                    <h4>Software Engineering (SE)</h4>
+                    <p>የመላው ኢትዮጵያ የSE ተማሪዎች ግሩፕ</p>
+                    <button class="btn-primary">መድረኩን ተቀላቀል</button>
+                </div>
+                <div class="card dept-card">
+                    <i class="fa-solid fa-user-doctor card-icon"></i>
+                    <h4>Medicine</h4>
+                    <p>የመላው ኢትዮጵያ የሕክምና ተማሪዎች ግሩፕ</p>
+                    <button class="btn-primary">መድረኩን ተቀላቀል</button>
+                </div>
+                <div class="card dept-card">
+                    <i class="fa-solid fa-scale-balanced card-icon"></i>
+                    <h4>Law</h4>
+                    <p>የመላው ኢትዮጵያ የሕግ ተማሪዎች ግሩፕ</p>
+                    <button class="btn-primary">መድረኩን ተቀላቀል</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-exams" class="page-section">
+            <div class="section-header">
+                <h3>የፈተናዎች እና ሞዴሎች ማዕከል</h3>
+                <p>የMid፣ Final እና የመውጫ ፈተናዎችን (Exit Exams) እዚህ ያግኙ።</p>
+            </div>
+            <div class="filter-box">
+                <select id="uni-select">
+                    <option value="">ዩኒቨርሲቲ ይምረጡ (ወይም ሁሉንም)</option>
+                    <option value="AAU">AAU</option>
+                    <option value="MTU">MTU</option>
+                    <option value="HU">HU</option>
+                    <option value="WSU">WSU</option>
+                    <option value="DDU">DDU</option>
+                </select>
+                <select id="year-select">
+                    <option value="">ዓመተ ምህረት / Year ይምረጡ</option>
+                    <option value="1">1ኛ ዓመት</option>
+                    <option value="2">2ኛ ዓመት</option>
+                    <option value="3">3ኛ ዓመት</option>
+                    <option value="4">4ኛ ዓመት</option>
+                </select>
+                <select id="exam-dept-select">
+                    <option value="">Department ይምረጡ</option>
+                    <option value="SE">Software Engineering</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="EE">Electrical Engineering</option>
+                </select>
+                <button class="btn-primary">ፈተናዎችን ፈልግ</button>
+            </div>
+        </section>
+
+        <section id="student-news" class="page-section">
+            <div class="section-header">
+                <h3>የተማሪዎች አዲስ ዜናዎች</h3>
+                <p>ስለ ትምህርት ሚኒስቴር፣ ዩኒቨርሲቲዎች እና አካዳሚክ ጉዳዮች የቅርብ መረጃዎች።</p>
+            </div>
+            <div class="news-list">
+                <article class="news-card">
+                    <span class="badge">አዲስ</span>
+                    <h4>የ2018 ዓ.ም የትምህርት ዘመን ምዝገባ ጥሪ</h4>
+                    <p>በሁሉም የመንግስት ዩኒቨርሲቲዎች የ1ኛ ዓመት ተማሪዎች ምዝገባ በሚቀጥለው ሳምንት ይጀምራል።</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="job-opportunity" class="page-section">
+            <div class="section-header">
+                <h3>የስራ እና ልምምድ (Internship) እድሎች</h3>
+                <p>ለተመራቂዎች እና ለከፍተኛ ዓመት ተማሪዎች የተዘጋጁ የቅርብ ጊዜ እድሎች።</p>
+            </div>
+            <div class="grid-container">
+                <div class="card job-card">
+                    <span class="job-type">Internship</span>
+                    <h4>Junior Web Developer</h4>
+                    <p>Ethio Tech Solutions • አዲስ አበባ</p>
+                    <button class="btn-outline">ዝርዝር ይመልከቱ</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="scholarships" class="page-section">
+            <div class="section-header">
+                <h3>የስኮላርሺፕ እድሎች (Scholarships)</h3>
+                <p>የውጭ ሀገር የነፃ ትምህርት እድሎች እና የመስፈርቶች መረጃ።</p>
+            </div>
+            <p>ቅርብ ጊዜ የወጡ የትምህርት እድሎች እዚህ ይዘረዘራሉ...</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
